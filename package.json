@@ -22,6 +22,8 @@
   "homepage": "https://github.com/Purpleflax/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "date-fns": "^2.29.3",
+    "file-loader": "^6.2.0",
     "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",

@@ -1,9 +1,18 @@
 const path = require('path');
 
 module.exports = {
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+  },
   entry: './src/index.ts',
   mode: 'development',
   module: {
+    parser: {
+      javascript: {
+        commonjsMagicComments: true,
+      },
+    },
+    
     rules: [
       {
         test: /\.ts$/,
@@ -17,7 +26,7 @@ module.exports = {
           'css-loader',
           'sass-loader'
         ]
-      }
+      },
     ]
   },
   output: {

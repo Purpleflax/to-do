@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./bundle.js"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <div id="root">
-    <div id="header">
-      <h1><span class="greyTag">&#60;</span><span class="blueTag">ToDo </span><span class="greyTag">\&#62;</span></h1>
+  <body>
+    <div id="root">
+      <div id="header">
+        <h1>
+          <span class="greyTag">&#60;</span><span class="blueTag">ToDo </span
+          ><span class="greyTag">\&#62;</span>
+        </h1>
+      </div>
+      <div id="sidebar">
+        <h1>
+          <span class="greyTag">&#60;</span>
+          <span class="blueTag">Projects</span>
+          <span class="greyTag">&#62;</span>
+        </h1>
+        <div id="projList"></div>
+        <h1>
+          <span class="greyTag">&#60;/</span>
+          <span class="blueTag">Projects</span>
+          <span class="greyTag">&#62;</span>
+        </h1>
+        <h2 id="addProjButton">
+          <span class="greyTag">&#60;</span>
+          <span class="blueTag">input</span>
+          <span class="lightBlueTag">class</span>
+          =
+          <span class="orangeTag">"addProject"</span>
+          <span class="greyTag">&#62;</span>
+        </h2>
+        <div id="addProjForm">
+          <input
+            type="text"
+            id="addProjInput"
+            placeholder="Add Project"
+            name="addProjInput"
+          />
+          <button id="addProjSubmit" type="submit" for="addProjInput">
+            Add
+          </button>
+        </div>
+        <h2>
+          <span class="greyTag">&#60;/</span>
+          <span class="blueTag">input</span>
+          <span class="greyTag">&#62;</span>
+        </h2>
+      </div>
+      <div id="content">
+        <div id="currentProject"></div>
+      </div>
     </div>
-    <div id="sidebar">
-      <a class="sidebarLink" href="#">All</a>
-      <a class="sidebarLink" href="#">Today</a>
-      <a class="sidebarLink" href="#">This Week</a>
-      <a class="sidebarLink" href="#">Completed</a>
-    </div>
-    <div id="content">
-      <button id="addButton">Add</button>
-    </div>
-  </div>
-</body>
-
+    <script defer src="./bundle.js"></script>
+  </body>
 </html>
